@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Mortgage repayment calculator</title>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cal-container">
+        <div class="cal-flex">
+          <div class="right-cal">
+            <div class="heading">
+              <h2>Mortgage calculator</h2>
+              <a href="">Clear all</a>
+            </div>
+            <form action="">
+              <div class="first">
+                <label for="">Mortgage amount</label>
+                <div class="input-wrapper">
+                  <h2 class="currency-symbol">£</h2>
+                  <input
+                    type="number"
+                    class="amount"
+                    id="mortgage-amount"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="second-third">
+                <div class="second">
+                  <label for="">Mortgage terms</label>
+                  <div class="wrapper">
+                    <input type="text" class="second-input theInput" required />
+                    <h3 class="yea">years</h3>
+                  </div>
+                </div>
+                <div class="third">
+                  <label for="">Interest rate</label>
+                  <div class="wrapper">
+                    <input type="text" class="third-input theInput" required />
+                    <h3 class="per">%</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="radio-section">
+                <label for="">Mortgage type</label>
+
+                <div class="repayment">
+                  <input type="radio" name="type" id="repay" value="repay" />
+                  <h3>Repayment</h3>
+                </div>
+                <div class="interest">
+                  <input type="radio" name="type" id="intrest" value="int" />
+                  <h3>Interest</h3>
+                </div>
+              </div>
+              <button type="submit" class="btn">
+                <img src="/assets/images/icon-calculator.svg" alt="" />
+                <p>Calculate repayment</p>
+              </button>
+            </form>
+          </div>
+          <div class="left-cal">
+            <div class="left-section">
+              <img src="/assets/images/illustration-empty.svg" alt="" />
+              <h2>Result are shown here</h2>
+              <p>
+                Complete the from and 'click repayment' to see what your monthly
+                repayment would be
+              </p>
+            </div>
+            <div class="section-complete">
+              <div class="left-heading">
+                <h2>Your result</h2>
+              </div>
+              <p class="te">
+                Your results are shown below based on the information you
+                provided. To adjust the result edit the form and click
+                'calculate repayment' again
+              </p>
+              <div class="payment-show">
+                <p>Your monthly repayment</p>
+                <h1>£1234.82</h1>
+                <div class="line"></div>
+                <p>Total you will repay over the term</p>
+                <h3>£456789</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
