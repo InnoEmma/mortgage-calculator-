@@ -1,4 +1,4 @@
-Certainly! Here's a concise `README.md` tailored for your simple mortgage calculator project, incorporating the details you've provided:
+
 
 ---
 
@@ -33,4 +33,3 @@ This project is open-source and available under the [MIT License](LICENSE).
 
 ---
 
-Feel free to customize this README further to match your project's specifics. If you need assistance with any part of your project or have questions, feel free to ask!
